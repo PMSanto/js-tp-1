@@ -28,7 +28,7 @@ console.log(unNumero + otroNumero);
 //Output: El 15 es el número más grande
 let numero1 = parseInt(prompt("introduce un numero"));
 let numero2 = parseInt(prompt("introduce otro numero"));
-if (numero1 > numero2) {
+if (numero1 >= numero2) {
   console.log(numero1 + " es mayor");
 } else {
   console.log(numero2 + " es mayor");
@@ -70,16 +70,16 @@ Ejemplo:
 input: 20
 Output: El 20 es divisible por 2. */
 
-let Numero = prompt("introduce un numero");
+let nu_mero = prompt("introduce un numero");
 if (
-  Numero % 2 === 0 ||
-  Numero % 3 === 0 ||
-  Numero % 5 === 0 ||
-  Numero % 7 === 0
+  nu_mero % 2 === 0 ||
+  nu_mero % 3 === 0 ||
+  nu_mero % 5 === 0 ||
+  nu_mero % 7 === 0
 ) {
-  console.log("el " + Numero + " es divisible por 2, o 3, o 5, o 7");
+  console.log("el " + nu_mero + " es divisible por 2, o 3, o 5, o 7");
 } else {
-  console.log("el " + Numero + " no es divisible por 2, o 3, o 5, o 7");
+  console.log("el " + nu_mero + " no es divisible por 2, o 3, o 5, o 7");
 }
 
 /* 11.- Añadir al ejercicio anterior que nos diga por cuál de los cuatro es divisible (hay que decir todos por los que es divisible)
@@ -90,16 +90,12 @@ Output: El 20 es divisible por 2 y por 5.
 Output: El 210 es divisible por 2, por 3, por 5 y por 7.*/
 
 let algunNumero = prompt("introduce un numero");
-let divisor1 = 2;
-let divisor2 = 3;
-let divisor3 = 5;
-let divisor4 = 7;
-if (algunNumero % divisor1 === 0) {
-  console.log("el " + algunNumero + " es divisible por" + divisor1);
-} else if (algunNumero % divisor2 === 0) {
-  console.log("el " + algunNumero + " es divisible por" + divisor2);
-} else if (algunNumero % divisor3 === 0) {
-  console.log("el " + algunNumero + " es divisible por" + divisor3);
-} else if (algunNumero % divisor4 === 0) {
-  console.log("el " + algunNumero + " es divisible por" + divisor4);
+if (algunNumero % 2 === 0) {
+  console.log("el " + algunNumero + " es divisible por" + 2);
+} else if (algunNumero % 3 === 0) {
+  console.log("el " + algunNumero + " es divisible por" + 3);
+} else if (algunNumero % 5 === 0) {
+  console.log("el " + algunNumero + " es divisible por" + 5);
+} else if (algunNumero % 7 === 0) {
+  console.log("el " + algunNumero + " es divisible por" + 7);
 } else console.log(" no es divisible por 2, o 3, o 5, o 7");
